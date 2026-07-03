@@ -6,9 +6,10 @@ cd "$ROOT_DIR"
 
 required_paths=(
   "AGENTS.md"
+  "README.md"
   "readme.md"
   "repo-state.md"
-  "docs/README.md"
+  "docs/index.md"
   "docs/validation.md"
   ".devstudio/project.yaml"
   ".github/workflows/ci.yml"

@@ -10,4 +10,4 @@ tracking:
   primary: repo-state
   repo_state: repo-state.md
 docs:
-  index: docs/README.md
+  index: docs/index.md
