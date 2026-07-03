@@ -8,10 +8,11 @@ Run the root validation wrapper:
 ./scripts/validate.sh
 ```
 
-The wrapper verifies required submodules are initialized, then builds the
-non-GUI Linux target:
+The wrapper verifies required submodules are initialized, removes stale build
+objects, then builds the non-GUI Linux target:
 
 ```bash
+OSTYPE=linux NOGUI=1 make clean
 OSTYPE=linux NOGUI=1 CFLAGS="-fcommon -Wno-implicit-function-declaration" make
 ```
 
@@ -45,4 +46,4 @@ CI uses recursive submodule checkout.
 
 The default GUI build requires `pkg-config` and GLFW 3 development files. The
 repo-health validation path intentionally uses `NOGUI=1` so it can run on a
-plain Linux build host.
+plain Linux build host without GUI dependencies.

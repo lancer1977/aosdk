@@ -24,4 +24,4 @@ DSF, SSF, QSF, PSF, PSF2, and SPU.
 ```
 
 The current validation path builds the Linux non-GUI target with compatibility
-flags for modern GCC.
+flags for modern GCC after removing stale build objects.

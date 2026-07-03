@@ -31,4 +31,5 @@ for path in "${required_paths[@]}"; do
   fi
 done
 
+OSTYPE=linux NOGUI=1 make clean >/dev/null 2>&1 || true
 OSTYPE=linux NOGUI=1 CFLAGS="-fcommon -Wno-implicit-function-declaration" make
