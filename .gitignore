@@ -1,0 +1,7 @@
+# Native build output
+obj/
+aosdk-*
+
+# IDE/user-local files
+.vscode/
+.idea/

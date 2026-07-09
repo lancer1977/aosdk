@@ -63,6 +63,18 @@ optimizations:
 	make debug
 ```
 
+##### Validation
+
+Run the repository validation wrapper from the root:
+
+```
+	./scripts/validate.sh
+```
+
+The wrapper builds the Linux non-GUI target with compatibility flags required by
+modern GCC for this legacy C codebase. See `docs/validation.md` for the exact
+command and submodule requirements.
+
 New in Release 1.4.8
 - Guard against invalid data sometimes created by makessf.py (fixes crashing
   Pebble Beach ST-V rips)
